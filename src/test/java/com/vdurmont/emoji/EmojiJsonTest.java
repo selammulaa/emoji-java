@@ -30,7 +30,7 @@ import static org.junit.Assert.assertTrue;
 public class EmojiJsonTest {
     @Parameterized.Parameters
     public static Collection<String> emojis() throws IOException {
-        final InputStream is = EmojiJsonTest.class.getClassLoader().getResourceAsStream("emoji-test.txt");
+        final InputStream is = EmojiJsonTest.class.getClassLoader().getResourceAsStream("emoji-list.txt");
         return EmojiTestDataReader.getEmojiList(is);
     }
 

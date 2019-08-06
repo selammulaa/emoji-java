@@ -187,7 +187,7 @@ public class EmojiParserTest {
     );
 
     // THEN
-    assertEquals("&#128102;\uD83C\uDFFF", result);
+    assertEquals("&#128102;&#127999;", result);
   }
 
   @Test
@@ -247,7 +247,7 @@ public class EmojiParserTest {
     );
 
     // THEN
-    assertEquals("&#x1f466;\uD83C\uDFFF", result);
+    assertEquals("&#x1f466;&#x1F3FF;", result);
   }
 
   @Test

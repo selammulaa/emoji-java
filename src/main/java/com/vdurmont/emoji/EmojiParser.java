@@ -216,7 +216,7 @@ public class EmojiParser {
             return unicodeCandidate.getEmoji().getHtmlDecimal();
           case IGNORE:
             return unicodeCandidate.getEmoji().getHtmlDecimal() +
-              unicodeCandidate.getFitzpatrickUnicode();
+              unicodeCandidate.getFitzPatrickHtmlDecimal();
         }
       }
     };
@@ -271,7 +271,7 @@ public class EmojiParser {
             return unicodeCandidate.getEmoji().getHtmlHexadecimal();
           case IGNORE:
             return unicodeCandidate.getEmoji().getHtmlHexadecimal() +
-              unicodeCandidate.getFitzpatrickUnicode();
+              unicodeCandidate.getFitzPatrickHtmlHexaDecimal();
         }
       }
     };
@@ -510,6 +510,11 @@ public class EmojiParser {
     public int getFitzpatrickEndIndex() {
       return getEmojiEndIndex() + (fitzpatrick != null ? 2 : 0);
     }
+
+    public String getFitzPatrickHtmlDecimal(){return hasFitzpatrick() ? fitzpatrick.htmlDecimal : ""; }
+
+    public String getFitzPatrickHtmlHexaDecimal(){return hasFitzpatrick() ? fitzpatrick.htmlHexaDecimal : "";}
+
   }
 
 
