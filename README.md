@@ -40,7 +40,7 @@ compile 'com.vdurmont:emoji-java:4.0.0'
 
 update the `emoji-lists.txt` file to contain the recent emojis from https://unicode.org/Public/emoji/. Choose the emoji-test.txt and replace the content of emoji-list.txt with the one in the emoji-test.txt
 
-In the `com.pagatech.emoji package` there is a java class called `EmojiReader`. Run the main method found in the class and the emojis-paga.json file will automatically be updated.
+In the `com.vdurmont.emoji package` there is a java class called `EmojiReader`. Run the main method found in the class and the emojis-paga.json file will automatically be updated.
 
 `clean`, `compile` and `package` the library and use the jar file that is generated. 
 
